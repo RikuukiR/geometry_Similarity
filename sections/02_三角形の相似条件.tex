@@ -1,0 +1,96 @@
+% 第２節 三角形の相似条件
+\section{三角形の相似条件}
+
+特に三角形においては、相似になるための条件が知られている。これを \fitblankbf[相似条件]{8} といい、次の3つがある。
+相似条件は証明中に使い、\uwave{一言一句違わずに} 使わなければならない。
+
+%相似条件
+    \begin{theorembox}[thm:相似条件]{\textbf{相似条件}}
+        2つの三角形が相似であるための条件は以下の3つである。
+
+        \begin{enumerate}[itemsep=1em]
+            \item \fitblankfixed[3組の辺の比がすべて等しい]{30}
+            \item \fitblankfixed[2組の辺の比とその間の角がそれぞれ等しい]{30}
+            \item \fitblankfixed[2組の角がそれぞれ等しい]{30}
+        \end{enumerate}
+    \end{theorembox}
+    \vspace{1em}
+
+\textbf{注意:} 合同条件と相似条件の違いに注意すること。以下、合同条件を書きなさい。
+
+\begin{enumerate}[itemsep=1em]
+    \item \fitblankfixed[３組の辺がそれぞれ等しい]{30}
+    \item \fitblankfixed[２組の辺の比とその間の角がそれぞれ等しい]{30}
+    \item \fitblankfixed[２組の角がそれぞれ等しい]{30}
+\end{enumerate}
+\vspace{1em}
+\newpage
+
+証明の流れと型を身につけてもらいたい。学校の型と異なるかとは思うが、ここでは私がオススメする型を紹介する。
+特にこだわりがない場合は、この型を是非使ってもらいたい。
+
+ここで使用する流れや型は２年次で学習した「合同な図形」の証明においても使用した汎用的なものである。
+
+%証明の流れ
+    \begin{theorembox}[thm:証明の流れ]{\textbf{証明の流れ}}
+        \label{thm:証明の流れ}
+        証明の流れは以下のようになる。
+
+        \begin{enumerate}
+            \item \fitblankbf[証明したい図形]{10} を確認し、一方を\fitblankbf[赤い三角形]{8}で、もう一方を\fitblankbf[青い三角形]{8}で囲む。
+            \item 赤い三角形と青い三角形を \fitblankbf[抜き出し]{8} $^{*}$、\fitblankbf[仮定]{8} や \fitblankbf[条件]{8} を描き込む。
+            \item(2)で抜き出した図形をもとに \fitblankbf[相似条件]{8} を確定させる。$^{**}$
+        \end{enumerate}
+    \end{theorembox}
+    \vspace{0.5em}
+
+    Theorem \ref{thm:証明の流れ} で証明の下準備は完了！証明は書き始める前に終えてなければならない。
+    したがって、Theorem \ref{thm:証明の流れ} を使って証明の型にはめていくことになる。
+    \vspace{0.5em}
+
+    \begin{theorembox}[thm:証明の型]{\textbf{証明の型}}
+        \label{thm:証明の型}
+        証明の型は以下のようになる。ここでは \textcolor{red}{\underline{$\triangle ABC$}} と
+        \textcolor{blue}{\underline{$\triangle DEF$}} が相似であることを証明する。
+
+        \begin{proof}
+            \setlength{\baselineskip}{1.5\baselineskip}
+            \mbox{}\\
+            \textcolor{red}{\fitblankbf[\triangle ABC]{8}} と \textcolor{blue}{\fitblankbf[\triangle DEF]{8}} において
+
+            \vspace{0.3em}
+            \textcolor{black}{\uwave{\hspace{2em}根拠①\hspace{3em}}} より、
+
+            \vspace{0.3em}
+            \makebox[\linewidth][s]{\textcolor{red}{\fitblankbf[AB]{8}} = \textcolor{blue}{\fitblankbf[DE]{8}} \hfill ・・・①}
+
+            \vspace{0.3em}
+            \textcolor{black}{\uwave{\hspace{2em}根拠②\hspace{3em}}} ので、
+
+            \vspace{0.3em}
+            \makebox[\linewidth][s]{\textcolor{red}{\fitblankbf[\angle BAC]{8}} = \textcolor{blue}{\fitblankbf[\angle EDF]{8}} \hfill ・・・②}
+
+            \vspace{0.3em}
+            \textcolor{black}{\uwave{\hspace{2em}根拠③\hspace{3em}}} ので、
+
+            \vspace{0.3em}
+            \makebox[\linewidth][s]{\textcolor{red}{\fitblankbf[CA]{8}} = \textcolor{blue}{\fitblankbf[FD]{8}} \hfill ・・・③}
+
+            \vspace{0.3em}
+            ①、②、③より、\textcolor{black}{\fitblankbf[相似条件]{15}} ので、
+
+            \vspace{0.3em}
+            \textcolor{red}{\fitblankbf[\triangle ABC]{8}} $\sim$ \textcolor{blue}{\fitblankbf[\triangle DEF]{8}}
+        \end{proof}
+    \end{theorembox}
+\vfill
+
+\noindent
+\rule{\textwidth}{0.4pt}
+
+\noindent
+$^{*}$ 図形を抜き出す際には \textbf{ 形は気にせず } 抜き出してもらって構わない。しかし、２つの三角形とも \textbf{ 同じ形 } で
+\textbf{ 対応する頂点 } で抜き出すこと。
+
+$^{**}$ 相似条件の確定には \textbf{ 結論 } を使ってはならない。
+\newpage

@@ -1,0 +1,45 @@
+\documentclass[12pt,a4paper]{jsarticle}
+\usepackage[margin=20truemm]{geometry}
+
+% 節番号を「第1節」形式に
+\renewcommand{\thesection}{第\arabic{section}節}
+
+\input{preamble.tex}
+
+% subsection番号を「1.1」形式に（thesectionの影響を受けないように）
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+
+% カウンターの初期値を設定
+\setcounter{section}{0}
+\setcounter{subsection}{0}
+\setcounter{definition}{0}
+\setcounter{theorem}{0}
+
+\title{【中学数学】 図形と相似}                % タイトル
+\author{}                     % 著者（空白でOK）
+\date{}                       % 日付（空白）
+
+\begin{document}
+\begin{center}
+{\LARGE 【中学数学】 第1章 図形と相似}
+
+体系数学2/数研出版/幾何編
+\end{center}
+
+% --- 著者と日付を右寄せで表示 ---
+\vspace{5mm}
+\hfill Riku Sugawara \\
+\hfill 11.2025
+
+% ========================================
+% 各セクションの読み込み
+% ========================================
+
+\input{sections/01_相似な図形.tex}
+\input{sections/02_三角形の相似条件.tex}
+\input{sections/03_平行線と線分の比.tex}
+\input{sections/04_中点連結定理.tex}
+\input{sections/05_相似な図形の面積比、体積比.tex}
+
+\end{document}
+
