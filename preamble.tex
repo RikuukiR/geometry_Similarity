@@ -201,7 +201,7 @@
 
 % 正解に合わせて自動で空欄を作る（em単位版）- 太字表示に統一、青字で表示
 % 使用法: \fitblank[答え]{幅}
-% 注: 解答表示時も空欄時も、両端に2.5emの空白を確保
+% 注: 解答表示時も空欄時も、両端に3emの空白を確保
 \newcommand{\fitblank}[2][\relax]{%
   \ifx#1\relax
     % 答えが指定されていない場合（従来の使用法）
@@ -209,9 +209,9 @@
   \else
     % 答えが指定されている場合
     \ifshowanswer
-      \underline{\hspace{2.5em}{\color{blue}\ensuremath{\bm{#1}}}\hspace{2.5em}}%
+      \underline{\hspace{3em}{\color{blue}\ensuremath{\bm{#1}}}\hspace{3em}}%
     \else
-      \underline{\hspace{2.5em}\phantom{\ensuremath{#1}}\hspace{2.5em}}%
+      \underline{\hspace{3em}\phantom{\ensuremath{#1}}\hspace{3em}}%
     \fi
   \fi
 }
@@ -219,7 +219,7 @@
 % 太文字版の空欄コマンド（数式と文字の両方に対応、青字で表示）
 % 使用法: \fitblankbf[答え]{幅} - 青字で表示
 %        {\color{red}\fitblankbf[答え]{幅}} - 色を上書き（赤など）
-% 注: 解答表示時も空欄時も、両端に2.5emの空白を確保
+% 注: 解答表示時も空欄時も、両端に3emの空白を確保
 \newcommand{\fitblankbf}[2][\relax]{%
   \ifx#1\relax
     % 答えが指定されていない場合（従来の使用法）
@@ -227,16 +227,16 @@
   \else
     % 答えが指定されている場合
     \ifshowanswer
-      \underline{\hspace{2.5em}{\color{blue}\ensuremath{\bm{#1}}}\hspace{2.5em}}%
+      \underline{\hspace{3em}{\color{blue}\ensuremath{\bm{#1}}}\hspace{3em}}%
     \else
-      \underline{\hspace{2.5em}\phantom{\ensuremath{#1}}\hspace{2.5em}}%
+      \underline{\hspace{3em}\phantom{\ensuremath{#1}}\hspace{3em}}%
     \fi
   \fi
 }
 
 % 固定幅版の空欄コマンド（下線の長さを揃えたい場合に使用）
 % 使用法: \fitblankfixed[答え]{幅}
-% 注: 指定された幅を使用し、解答は中央揃えで表示
+% 注: 指定された幅を使用し、解答の周りに3emの空白を確保して中央揃えで表示
 \newcommand{\fitblankfixed}[2][\relax]{%
   \ifx#1\relax
     % 答えが指定されていない場合
@@ -244,9 +244,9 @@
   \else
     % 答えが指定されている場合
     \ifshowanswer
-      \underline{\makebox[#2em][c]{\color{blue}\ensuremath{\bm{#1}}}}%
+      \underline{\hspace{3em}\makebox[#2em][c]{\color{blue}\ensuremath{\bm{#1}}}\hspace{3em}}%
     \else
-      \underline{\hspace*{#2em}}%
+      \underline{\hspace{3em}\makebox[#2em][c]{\phantom{\ensuremath{#1}}}\hspace{3em}}%
     \fi
   \fi
 }
